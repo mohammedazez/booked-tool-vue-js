@@ -1,36 +1,17 @@
-$color-one: #f6f8f8;
-$color-two: black;
-$color-three: #e2e3e2;
-$color-four: #ffffff;
-$position-one: relative;
-$position-two: absolute;
-$seratus-persen: 100%;
-$display-one: flex;
-$display-two: inline;
-$display-three: inline-block;
-$display-four: none;
-$display-five: block;
-$ukuran-satu: 50px;
-$ukuran-dua: 100vh;
-$ukuran-tiga: 0px;
-$font-satu: sans-serif;
-
 .touch-area {
   flex-direction: row;
-  width: $seratus-persen;
+  width: 100%;
   height: 300px;
   max-width: 100%;
   padding-right: 350px;
   padding-left: 350px;
+  padding-top: 50px;
+  padding-bottom: 700px;
 }
 
 .touch-area {
-  background-color: blue;
+  background-color: #e2e3e2;
   text-align: center;
-}
-
-.testing {
-  background-color: blue;
 }
 
 .touch-img {
@@ -40,11 +21,11 @@ $font-satu: sans-serif;
 }
 
 .text-touch-one {
-  font-family: $font-satu;
+  font-family: sans-serif;
 }
 
 .text-touch-two {
-  font-family: $font-satu;
+  font-family: sans-serif;
 }
 
 .input-touch-area[type="text"] {
@@ -68,7 +49,7 @@ $font-satu: sans-serif;
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px;
+  height: 430px;
 }
 
 .input-touch[type="text"],
@@ -78,27 +59,39 @@ $font-satu: sans-serif;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   resize: vertical;
-}
-
-.input-touch[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.input-touch[type="submit"]:hover {
-  background-color: #45a049;
 }
 
 .container-touch-form {
   border-radius: 5px;
   padding: 20px;
+}
+
+.button-touch {
+  background-color: #428ecb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  display: flex;
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 100%;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 @media (max-width: 700px) {
