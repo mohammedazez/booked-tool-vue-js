@@ -1,0 +1,91 @@
+.navbooked {
+  height: 50px;
+  width: 100%;
+  background-color: #f6f8f8;
+  position: relative;
+}
+
+.navbooked > .navbooked-header {
+  display: inline;
+}
+
+.navbooked > .navbooked-header > .navbooked-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbooked > .navbooked-btn {
+  display: none;
+}
+
+.navbooked > .navbooked-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbooked > .navbooked-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbooked > .navbooked-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbooked > #navbooked-check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbooked > .navbooked-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbooked > .navbooked-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbooked > .navbooked-btn > label:hover,
+  .navbooked #navbooked-check:checked ~ .navbooked-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbooked > .navbooked-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  .navbooked > .navbooked-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #f6f8f8;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbooked > .navbooked-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbooked > #navbooked-check:not(:checked) ~ .navbooked-links {
+    height: 0px;
+  }
+  .navbooked > #navbooked-check:checked ~ .navbooked-links {
+    height: calc($ukuran-dua - $ukuran-satu);
+    overflow-y: auto;
+  }
+}
+/*# sourceMappingURL=Test.css.map */

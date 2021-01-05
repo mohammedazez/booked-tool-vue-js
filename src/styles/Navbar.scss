@@ -1,0 +1,106 @@
+$color-one: #f6f8f8;
+$color-two: black;
+$color-three: #e2e3e2;
+$color-four: #ffffff;
+$position-one: relative;
+$position-two: absolute;
+$seratus-persen: 100%;
+$display-one: flex;
+$display-two: inline;
+$display-three: inline-block;
+$display-four: none;
+$display-five: block;
+$ukuran-satu: 50px;
+$ukuran-dua: 100vh;
+$ukuran-tiga: 0px;
+$font-satu: sans-serif;
+
+.navbooked {
+  height: $ukuran-satu;
+  width: $seratus-persen;
+  background-color: $color-one;
+  position: $position-one;
+}
+
+.navbooked > .navbooked-header {
+  display: $display-two;
+}
+
+.navbooked > .navbooked-header > .navbooked-title {
+  display: $display-three;
+  font-size: 22px;
+  color: $color-two;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbooked > .navbooked-btn {
+  display: $display-four;
+}
+
+.navbooked > .navbooked-links {
+  display: $display-two;
+  float: right;
+  font-size: 18px;
+}
+
+.navbooked > .navbooked-links > a {
+  display: $display-three;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: $color-two;
+}
+
+.navbooked > .navbooked-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbooked > #navbooked-check {
+  display: $display-four;
+}
+
+@media (max-width: 700px) {
+  .navbooked > .navbooked-btn {
+    display: $display-three;
+    position: $position-two;
+    right: $ukuran-tiga;
+    top: $ukuran-tiga;
+  }
+  .navbooked > .navbooked-btn > label {
+    display: $display-three;
+    width: $ukuran-satu;
+    height: $ukuran-satu;
+    padding: 13px;
+  }
+  .navbooked > .navbooked-btn > label:hover,
+  .navbooked #navbooked-check:checked ~ .navbooked-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbooked > .navbooked-btn > label > span {
+    display: $display-five;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid $color-two;
+  }
+  .navbooked > .navbooked-links {
+    position: $position-two;
+    display: $display-five;
+    width: $seratus-persen;
+    background-color: $color-one;
+    height: $ukuran-tiga;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: $ukuran-satu;
+    left: $ukuran-tiga;
+  }
+  .navbooked > .navbooked-links > a {
+    display: $display-five;
+    width: $seratus-persen;
+  }
+  .navbooked > #navbooked-check:not(:checked) ~ .navbooked-links {
+    height: $ukuran-tiga;
+  }
+  .navbooked > #navbooked-check:checked ~ .navbooked-links {
+    height: calc($ukuran-dua - $ukuran-satu);
+    overflow-y: auto;
+  }
+}

@@ -1,60 +1,36 @@
 <template>
-<div>
-<div class="navbar">
-  <a class="logo" href="#"> Harsh</a>
-  <ul class="nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#discover">Discover</a></li>
-    <li><a href="#login">Login</a></li>
-    <li><a href="#touch">Touch</a></li>
-    <li><a href="#register">Register</a></li>
-    <li><a href="#search">search</a></li>
-  </ul>
+    <div>
+        <div class="navbooked">
+  <input type="checkbox" id="navbooked-check">
+  <div class="navbooked-header">
+    <div class="navbooked-title">
+      Booked Tool
+    </div>
+  </div>
+  <div class="navbooked-btn">
+    <label for="navbooked-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="navbooked-links">
+    <a href="#home">Home</a>
+    <a href="#discover">Discover</a>
+    <a href="#touch">Touch</a>
+    <a href="#register">Register</a>
+    <a href="#login">Login</a>
+    <a href="#search">Search</a>
+  </div>
 </div>
-</div>
+    </div>
 </template>
 
 <script>
+import "../styles/Navbar.scss"
+
 export default {
-    name: 'Navbar',
-    data: []
+    name: "Navbarsection"
 }
-
 </script>
-
-<style scoped>
-html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Poppins;
-}
-h1 {
-  font-size: 50px;
-  font-family: Audiowide;
-}
-p {
-  font-size: 24px;
-  line-height: 50px;
-}
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #d4d7de;
-  width: 100%;
-  height: 70px;
-  z-index: 1;
-}
-.nav {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-  margin-right: 15%;
-}
-</style>
