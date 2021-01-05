@@ -11,7 +11,7 @@
   position: absolute;
   top: 50%;
   left: 8%;
-  background-color: blue;
+  background-color: #428ecb;
   /* Green */
   border: none;
   color: white;
@@ -37,8 +37,8 @@
   position: absolute;
   max-width: 100%;
   width: 50%;
-  height: 90%;
-  margin-left: 670px;
+  height: 85%;
+  margin-left: 660px;
 }
 
 .row-jumbotron {
@@ -49,7 +49,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1005;
 }
 
 .column-jumbotron {
