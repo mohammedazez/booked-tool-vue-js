@@ -29,31 +29,40 @@
 <section class="banner-area" id="home">
 </section>
 
-<section class="login-area" id="login">
+
+<!-- Login Area -->
+<section class="login-area" >
   <div class="text-part">
-    <p>Please log in start using</p>
-    <h1>Booked Tool</h1>
+<div>
+  <div class="login-grid-one">
+    <p class="text-login-area-one">Please log in to start using</p>
+    <h1 class="text-login-area-two">Booked Tool</h1>
+  </div>
+  <div class="login-grid-two">
+     <form>
+      <input tpye="text" name="" placeholder="Email">
+      <input type="password" name="" placeholder="Password">
+      <input type="submit" name="" value="Login">
+    </form>
+  </div>
+</div>
   </div>
 </section>
+<!-- End Login Area -->
 
 <section class="discover-area" id="discover">
   <div class="text-part">
-    <h1>
-      Discover</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p>
+    <h1>Discover</h1>
+    <p>Booked Tool.</p>
   </div>
 </section>
 
 <section class="touch-area" id="touch">
   <div class="text-part">
-    <h1>
-     Get in Touch</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p>
+    <h1>Get in Touch</h1>
+    <p>Want to get in touch? We'd love to her from you. Here's how you can reach us..</p>
   </div>
 </section>
-
 
 </div>
 </template>
@@ -69,5 +78,4 @@ export default {
 };
 
 </script>
-
 

@@ -13,10 +13,49 @@ $display-five: block;
 $ukuran-satu: 50px;
 $ukuran-dua: 100vh;
 $ukuran-tiga: 0px;
+$font-satu: sans-serif;
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
 }
+
+// Login Area
+.login-area {
+  background-color: $color-three;
+}
+
+.text-part {
+  width: 85%;
+  height: auto;
+}
+
+.login-grid-one {
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
+
+.login-grid-two {
+  width: 75%;
+  float: left;
+  padding: 15px;
+}
+
+.text-login-area-one {
+  font-size: 20px;
+  font-family: $font-satu;
+}
+
+.text-login-area-two {
+  font-size: 30px;
+  font-family: $font-satu;
+}
+// End Login Area
+
 .banner-area {
   position: $position-one;
   background-image: url(https://i.postimg.cc/GtRM7mdX/1.jpg);
@@ -26,7 +65,17 @@ html {
   background-size: cover;
 }
 
-.login-area,
+.login-area {
+  position: $position-one;
+  display: $display-one;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: $seratus-persen;
+  height: 200px;
+}
+
 .discover-area,
 .touch-area {
   position: $position-one;
@@ -38,13 +87,7 @@ html {
   width: $seratus-persen;
   height: 700px;
 }
-.text-part {
-  width: 65%;
-  height: 80%;
-}
-.login-area {
-  background-color: $color-three;
-}
+
 .discover-area {
   background-color: $color-four;
   color: $color-two;
