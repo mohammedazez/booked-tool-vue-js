@@ -15,13 +15,11 @@ $ukuran-dua: 100vh;
 $ukuran-tiga: 0px;
 $font-satu: sans-serif;
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 700px) {
+.banner-area {
+  position: $position-one;
+  background-image: url(https://i.postimg.cc/GtRM7mdX/1.jpg);
+  width: $seratus-persen;
+  height: $ukuran-dua;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

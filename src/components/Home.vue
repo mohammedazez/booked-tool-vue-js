@@ -1,47 +1,32 @@
 <template>
+
 <div>
 <Navbar-section></Navbar-section>
-<section class="banner-area" id="home">
-</section>
-
+<Jumbotron-section></Jumbotron-section>
 <Login-section></Login-section>
-
-
-<!-- Discover -->
-<section class="discover-area" id="discover">
-  <div class="text-part">
-    <h1>Discover</h1>
-    <p>Booked Tool.</p>
-  </div>
-</section>
-<!-- End Discover -->
-
-<!-- Touch -->
-<section class="touch-area" id="touch">
-  <div class="text-part">
-    <h1>Get in Touch</h1>
-    <p>Want to get in touch? We'd love to her from you. Here's how you can reach us..</p>
-  </div>
-</section>
-<!-- End Touch -->
-
+<Discover-section></Discover-section>
+<Touch-section></Touch-section>
 </div>
+
 </template>
 
 <script>
 import "../styles/Home.scss";
-import Loginsection from "../components/Loginsection.vue"
 import Navbarsection from "../components/Navbar.vue"
+import Jumbotronsection from "../components/Jumbotron.vue"
+import Loginsection from "../components/Loginsection.vue"
+import Discoversection from "../components/Discover.vue"
+import Touchsection from "../components/Touch.vue"
 
 export default {
   name: "Home",
   components: {
+    "Navbar-section": Navbarsection,
+    "Jumbotron-section": Jumbotronsection,
     "Login-section": Loginsection,
-    "Navbar-section": Navbarsection
-    // "Navbar-section": Navbar
+    "Discover-section": Discoversection,
+    "Touch-section": Touchsection
   }
 };
-
-
 </script>
 

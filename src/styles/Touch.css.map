@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAiBA,AAAA,WAAW,CAAC;EACV,QAAQ,EAdK,QAAQ;EAerB,OAAO,EAZK,IAAI;EAahB,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,GAAG;EACnB,KAAK,EAlBU,IAAI;EAmBnB,MAAM,EAAE,KAAK;CACd;;AAED,AAAA,WAAW,CAAC;EACV,gBAAgB,EA3BJ,OAAO;CA4BpB",
+    "sources": [
+        "Touch.scss"
+    ],
+    "names": [],
+    "file": "Touch.css"
+}

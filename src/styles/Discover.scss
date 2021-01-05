@@ -15,12 +15,20 @@ $ukuran-dua: 100vh;
 $ukuran-tiga: 0px;
 $font-satu: sans-serif;
 
-* {
-  box-sizing: border-box;
+.discover-area {
+  position: $position-one;
+  display: $display-one;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: $seratus-persen;
+  height: 700px;
 }
 
-html {
-  scroll-behavior: smooth;
+.discover-area {
+  background-color: $color-four;
+  color: $color-two;
 }
 
 @media (max-width: 700px) {
