@@ -1,8 +1,144 @@
-.pertama {
-  font-size: 20px;
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  color: red;
+.banner-area {
+  position: relative;
+  background-image: url(https://i.postimg.cc/GtRM7mdX/1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-area,
+.discover-area,
+.touch-area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 700px;
+}
+
+.text-part {
+  width: 65%;
+  height: 80%;
+}
+
+.login-area {
+  background-color: #e2e3e2;
+}
+
+.discover-area {
+  background-color: #ffffff;
+  color: black;
+}
+
+.touch-area {
+  background-color: #e2e3e2;
+}
+
+.navbooked {
+  height: 50px;
+  width: 100%;
+  background-color: #f6f8f8;
+  position: relative;
+}
+
+.navbooked > .navbooked-header {
+  display: inline;
+}
+
+.navbooked > .navbooked-header > .navbooked-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbooked > .navbooked-btn {
+  display: none;
+}
+
+.navbooked > .navbooked-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbooked > .navbooked-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbooked > .navbooked-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbooked > #navbooked-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbooked > .navbooked-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbooked > .navbooked-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbooked > .navbooked-btn > label:hover,
+  .navbooked #navbooked-check:checked ~ .navbooked-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbooked > .navbooked-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  .navbooked > .navbooked-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #f6f8f8;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbooked > .navbooked-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbooked > #navbooked-check:not(:checked) ~ .navbooked-links {
+    height: 0px;
+  }
+  .navbooked > #navbooked-check:checked ~ .navbooked-links {
+    height: calc($ukuran-dua - $ukuran-satu);
+    overflow-y: auto;
+  }
 }
 /*# sourceMappingURL=Home.css.map */
