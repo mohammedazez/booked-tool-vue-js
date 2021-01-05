@@ -1,30 +1,58 @@
+// Color
+$color-one: #f6f8f8;
+$color-two: black;
+$color-three: #e2e3e2;
+$color-four: #ffffff;
+$color-five: #428ecb;
+
+// Position
+$position-one: relative;
+$position-two: absolute;
+$left: left;
+$center: center;
+$seratus-persen: 100%;
+
+// Display
+$display-one: flex;
+$display-two: inline;
+$display-three: inline-block;
+$display-four: none;
+$display-five: block;
+
+// Font
+$font-satu: sans-serif;
+
+// Direction
+$direction-one: row;
+$direction-two: column;
+
 .text-jumbotron {
-  position: absolute;
+  position: $position-two;
   top: 30%;
   left: 8%;
-  color: white;
+  color: $color-four;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: $font-satu;
 }
 
 .button-jumbotron {
-  position: absolute;
+  position: $position-two;
   top: 45%;
   left: 8%;
   background-color: #428ecb;
-  border: none;
-  color: white;
+  border: $display-four;
+  color: $color-four;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  text-align: $center;
+  text-decoration: $display-four;
+  display: $display-three;
   font-size: 16px;
   border-radius: 10px;
-  font-family: sans-serif;
+  font-family: $font-satu;
 }
 
 .gambar-area-one {
-  position: absolute;
+  position: $position-two;
   max-width: 100%;
   width: 55%;
   height: 100%;
@@ -33,7 +61,7 @@
 }
 
 .gambar-area-two {
-  position: absolute;
+  position: $position-two;
   max-width: 100%;
   width: 50%;
   height: 85%;
@@ -41,12 +69,12 @@
 }
 
 .row-jumbotron {
-  display: flex;
-  flex-direction: row;
+  display: $display-one;
+  flex-direction: $direction-one;
 }
 
 .column-jumbotron {
-  float: left;
+  float: $left;
   width: 100%;
   height: 600px;
 }
@@ -62,18 +90,18 @@
     top: 25%;
     left: 5%;
     padding: 15px 32px;
-    text-align: center;
+    text-align: $center;
     font-size: 16px;
   }
 
   .gambar-area-one {
-    position: absolute;
+    position: $position-two;
     width: 100%;
     height: 50%;
   }
 
   .gambar-area-two {
-    position: absolute;
+    position: $position-two;
     width: 100%;
     height: 50%;
     margin-left: 0px;
@@ -81,12 +109,12 @@
   }
 
   .row-jumbotron {
-    position: relative;
-    flex-direction: column;
+    position: $position-one;
+    flex-direction: $direction-two;
   }
 
   .column-jumbotron {
-    float: left;
+    float: $left;
     width: 100%;
     height: 600px;
   }
@@ -103,18 +131,18 @@
     top: 35%;
     left: 5%;
     padding: 15px 32px;
-    text-align: center;
+    text-align: $center;
     font-size: 16px;
   }
 
   .gambar-area-one {
-    position: absolute;
+    position: $position-two;
     width: 100%;
     height: 80%;
   }
 
   .gambar-area-two {
-    position: absolute;
+    position: $position-two;
     width: 100%;
     height: 80%;
     margin-left: 0px;
@@ -122,12 +150,12 @@
   }
 
   .row-jumbotron {
-    position: relative;
-    flex-direction: column;
+    position: $position-one;
+    flex-direction: $direction-two;
   }
 
   .column-jumbotron {
-    float: left;
+    float: $left;
     width: 100%;
     height: 600px;
   }
