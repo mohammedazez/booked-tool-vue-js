@@ -1,5 +1,6 @@
 <template>
 <div>
+<!-- Navbar -->
 <div class="navbooked">
   <input type="checkbox" id="navbooked-check">
   <div class="navbooked-header">
@@ -24,7 +25,7 @@
     <a href="#search">Search</a>
   </div>
 </div>
-
+<!-- End Navbar -->
 
 <section class="banner-area" id="home">
 </section>
@@ -52,19 +53,23 @@
 </section>
 <!-- End Login Area -->
 
+<!-- Discover -->
 <section class="discover-area" id="discover">
   <div class="text-part">
     <h1>Discover</h1>
     <p>Booked Tool.</p>
   </div>
 </section>
+<!-- End Discover -->
 
+<!-- Touch -->
 <section class="touch-area" id="touch">
   <div class="text-part">
     <h1>Get in Touch</h1>
     <p>Want to get in touch? We'd love to her from you. Here's how you can reach us..</p>
   </div>
 </section>
+<!-- End Touch -->
 
 </div>
 </template>
