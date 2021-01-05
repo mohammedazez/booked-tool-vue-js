@@ -31,6 +31,11 @@
   font-family: sans-serif;
 }
 
+.container-search-touch {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .input-touch-area[type="text"] {
   background-color: #ffffff;
   width: 100%;
@@ -61,17 +66,20 @@
   max-width: 100%;
 }
 
+.title-feedback-touch {
+  font-family: sans-serif;
+}
+
 .input-touch[type="text"],
 .textarea-touch {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 5px;
   resize: vertical;
+  font-family: sans-serif;
 }
 
 .container-touch-form {
@@ -82,7 +90,7 @@
 .button-touch {
   background-color: #428ecb;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 15px 32px;
   font-size: 16px;
   border-radius: 5px;

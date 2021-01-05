@@ -1,8 +1,36 @@
+// Color
+$color-one: #f6f8f8;
+$color-two: black;
+$color-three: #e2e3e2;
+$color-four: #ffffff;
+$color-five: #428ecb;
+
+// position
+$position-one: relative;
+$position-two: absolute;
+$left: left;
+$right: right;
+$seratus-persen: 100%;
+
+// Display
+$display-one: flex;
+$display-two: inline;
+$display-three: inline-block;
+$display-four: none;
+$display-five: block;
+
+// font
+$font-satu: sans-serif;
+
+// Direction
+$direction-one: row;
+$direction-two: column;
+
 .touch-area {
-  flex-direction: row;
-  width: 100%;
+  flex-direction: $direction-one;
+  width: $seratus-persen;
   height: 300px;
-  max-width: 100%;
+  max-width: $seratus-persen;
   padding-right: 350px;
   padding-left: 350px;
   padding-top: 50px;
@@ -10,59 +38,68 @@
 }
 
 .touch-area {
-  background-color: #e2e3e2;
+  background-color: $color-three;
   text-align: center;
 }
 
 .touch-img {
-  max-width: 100%;
+  max-width: $seratus-persen;
   width: auto;
   height: 50px;
 }
 
 .text-touch-one {
-  font-family: sans-serif;
+  font-family: $font-satu;
 }
 
 .text-touch-two {
-  font-family: sans-serif;
+  font-family: $font-satu;
+}
+
+.container-search-touch {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .input-touch-area[type="text"] {
-  background-color: #ffffff;
-  width: 100%;
+  background-color: $color-four;
+  width: $seratus-persen;
   padding: 15px;
   border-radius: 5px;
-  border: none;
+  border: $display-four;
   font-size: 20px;
-  max-width: 100%;
+  max-width: $seratus-persen;
   margin-bottom: 10px;
-  font-family: sans-serif;
+  font-family: $font-satu;
 }
 
 .row-touch {
-  display: flex;
-  flex-direction: row;
+  display: $display-one;
+  flex-direction: $direction-one;
 }
 
 .column-touch {
-  float: left;
+  float: $left;
   width: 50%;
   padding: 10px;
   height: 460px;
-  max-width: 100%;
+  max-width: $seratus-persen;
+}
+
+.title-feedback-touch {
+  font-family: $font-satu;
 }
 
 .input-touch[type="text"],
 .textarea-touch {
-  width: 100%;
+  width: $seratus-persen;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 5px;
   resize: vertical;
+  font-family: $font-satu;
 }
 
 .container-touch-form {
@@ -71,30 +108,30 @@
 }
 
 .button-touch {
-  background-color: #428ecb;
-  border: none;
-  color: white;
+  background-color: $color-five;
+  border: $display-four;
+  color: $color-four;
   padding: 15px 32px;
   font-size: 16px;
   border-radius: 5px;
-  font-family: sans-serif;
-  display: flex;
+  font-family: $font-satu;
+  display: $display-one;
 }
 
 .responsive-map {
   overflow: hidden;
   padding-bottom: 56.25%;
-  position: relative;
-  height: 100%;
-  max-width: 100%;
+  position: $position-one;
+  height: $seratus-persen;
+  max-width: $seratus-persen;
 }
 .responsive-map iframe {
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  max-width: 100%;
+  height: $seratus-persen;
+  width: $seratus-persen;
+  position: $position-two;
+  max-width: $seratus-persen;
 }
 
 @media (max-width: 700px) {
@@ -105,12 +142,12 @@
   }
 
   .row-touch {
-    flex-direction: column;
+    flex-direction: $direction-two;
   }
 
   .column-touch {
-    float: left;
-    width: 100%;
+    float: $left;
+    width: $seratus-persen;
   }
 }
 
@@ -126,11 +163,11 @@
   }
 
   .row-touch {
-    flex-direction: column;
+    flex-direction: $direction-two;
   }
 
   .column-touch {
-    float: left;
-    width: 100%;
+    float: $left;
+    width: $seratus-persen;
   }
 }

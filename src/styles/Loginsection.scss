@@ -62,7 +62,7 @@ $direction-two: column;
 .login-grid-one {
   width: 25%;
   float: left;
-  line-height: $ukuran-enam;
+  line-height: 35px;
   padding: 10px;
   max-width: $seratus-persen;
 }
@@ -189,8 +189,8 @@ $direction-two: column;
   .login-grid-one {
     width: $seratus-persen;
     text-align: center;
-    line-height: 0px;
-    padding: 0px;
+    line-height: 30px;
+    padding: 20px;
     max-width: $seratus-persen;
   }
 

@@ -6,10 +6,8 @@
                 <h1 class="text-touch-one">Get in Touch</h1>
                 <p class="text-touch-two">Want to get in touch? We'd love to her from you. Here's how you can reach us..</p>
             </div>
-            <div>
-                <div >
+            <div class="container-search-touch">
                     <input class="input-touch-area" type="text" name="" placeholder="Search..." >
-                </div>
             </div>
             <div>
                 <div class="row-touch">
@@ -20,7 +18,7 @@
                     </div>
                 <div class="column-touch" style="background-color:#ffffff;">
                     <div class="container-touch-form">
-                        <h1>Feedback</h1>
+                        <h1 class="title-feedback-touch">Feedback</h1>
                         <form>
                             <input class="input-touch" type="text" id="fname" name="firstname" placeholder="First">
                             <input class="input-touch" type="text" id="lname" name="lastname" placeholder="Last">

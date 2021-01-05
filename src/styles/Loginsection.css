@@ -43,7 +43,7 @@
 .login-grid-one {
   width: 25%;
   float: left;
-  line-height: 5px;
+  line-height: 35px;
   padding: 10px;
   max-width: 100%;
 }
@@ -166,8 +166,8 @@
   .login-grid-one {
     width: 100%;
     text-align: center;
-    line-height: 0px;
-    padding: 0px;
+    line-height: 30px;
+    padding: 20px;
     max-width: 100%;
   }
   .login-grid-two {
