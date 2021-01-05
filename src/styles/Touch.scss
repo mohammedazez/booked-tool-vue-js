@@ -16,18 +16,34 @@ $ukuran-tiga: 0px;
 $font-satu: sans-serif;
 
 .touch-area {
-  position: $position-one;
-  display: $display-one;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  // position: $position-one;
+  // display: $display-one;
+  // justify-content: space-around;
+  // align-items: center;
+  // flex-wrap: wrap;
   flex-direction: row;
   width: $seratus-persen;
-  height: 700px;
+  height: 300px;
+  max-width: 100%;
 }
 
 .touch-area {
   background-color: $color-three;
+  text-align: center;
+}
+
+.touch-img {
+  max-width: 100%;
+  width: auto;
+  height: 50px;
+}
+
+.text-touch-one {
+  font-family: $font-satu;
+}
+
+.text-touch-two {
+  font-family: $font-satu;
 }
 
 @media (max-width: 700px) {

@@ -1,15 +1,16 @@
 .text-jumbotron {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 8%;
   color: white;
   font-size: 30px;
+  font-family: sans-serif;
 }
 
 .button-jumbotron {
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 8%;
   background-color: blue; /* Green */
   border: none;
   color: white;
@@ -19,6 +20,7 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
+  font-family: sans-serif;
 }
 
 .gambar-area-one {
@@ -41,6 +43,7 @@
 .row-jumbotron {
   display: flex;
   flex-direction: row;
+  max-width: 1005;
 }
 
 .column-jumbotron {
