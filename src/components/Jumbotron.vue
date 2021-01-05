@@ -12,7 +12,7 @@
 
   <div>
         <p class="text-jumbotron"><strong>Booked Tool</strong> enables you to <br/> create Interactive Advertisement</p>
-        <button class="button-jumbotron">What is it?</button>
+        <button class="button-jumbotron">What is it ?</button>
     </div>
 </div>
 </template>

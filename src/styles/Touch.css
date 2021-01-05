@@ -57,7 +57,8 @@
   float: left;
   width: 50%;
   padding: 10px;
-  height: 430px;
+  height: 460px;
+  max-width: 100%;
 }
 
 .input-touch[type="text"],
@@ -96,6 +97,7 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 100%;
+  max-width: 100%;
 }
 
 .responsive-map iframe {
@@ -104,9 +106,15 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  max-width: 100%;
 }
 
 @media (max-width: 700px) {
+  .touch-area {
+    height: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .row-touch {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -120,6 +128,14 @@
 }
 
 @media (max-width: 1125px) {
+  .responsive-map iframe {
+    height: 70%;
+  }
+  .touch-area {
+    height: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .row-touch {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
