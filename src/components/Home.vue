@@ -31,11 +31,11 @@
 
 
 <!-- Login Area -->
-<section class="login-area" >
+<section class="login-area" id="login" >
   <div class="text-part">
-<div>
+<div class="container-login-area-first">
   <div class="login-grid-one">
-    <p class="text-login-area-one">Please log in to start using</p>
+    <p class="text-login-area-one" >Please log in to start using</p>
     <h1 class="text-login-area-two">Booked Tool</h1>
   </div>
   <div class="login-grid-two">

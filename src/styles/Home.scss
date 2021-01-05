@@ -25,12 +25,31 @@ html {
 
 // Login Area
 .login-area {
+  position: $position-one;
+  display: $display-one;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: $seratus-persen;
+  height: 200px;
+  max-width: 100%;
+}
+
+.container-login-area-first {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.login-area {
   background-color: $color-three;
 }
 
 .text-part {
   width: 85%;
   height: auto;
+  max-width: 100%;
 }
 
 .login-grid-one {
@@ -38,21 +57,25 @@ html {
   float: left;
   line-height: 5px;
   padding: 10px;
+  max-width: 100%;
 }
 
 .login-grid-two {
   width: 75%;
   float: left;
+  max-width: 100%;
 }
 
 .text-login-area-one {
   font-size: 20px;
   font-family: $font-satu;
+  max-width: 100%;
 }
 
 .text-login-area-two {
   font-size: 30px;
   font-family: $font-satu;
+  max-width: 100%;
 }
 
 .input-login-area[type="text"],
@@ -64,6 +87,7 @@ html {
   border-radius: 5px;
   border: none;
   font-size: 20px;
+  max-width: 100%;
 }
 
 .button-login-area {
@@ -75,6 +99,7 @@ html {
   border-radius: 5px;
   width: 10%;
   font-size: 18px;
+  max-width: 100%;
 }
 
 .button-login-area:hover {
@@ -83,7 +108,9 @@ html {
 
 .container-login-area {
   padding: 10px;
+  max-width: 100%;
 }
+
 // End Login Area
 
 .banner-area {
@@ -93,17 +120,6 @@ html {
   height: $ukuran-dua;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.login-area {
-  position: $position-one;
-  display: $display-one;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: $seratus-persen;
-  height: 200px;
 }
 
 .discover-area,
@@ -169,7 +185,65 @@ html {
   display: $display-four;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  // Login area
+  .login-area {
+    height: 400px;
+    max-width: 100%;
+  }
+
+  .container-login-area-first {
+    flex-direction: column;
+  }
+
+  .login-grid-one {
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    padding: 0px;
+    max-width: 100%;
+  }
+
+  .login-grid-two {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-login-area-one {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+
+  .input-login-area[type="text"],
+  .input-login-area[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .button-login-area {
+    padding: 10px;
+    margin: 2px;
+    width: 100%;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .button-login-area:hover {
+    opacity: 0.8;
+  }
+
+  .container-login-area {
+    padding: 0px;
+    max-width: 100%;
+  }
+  // End Login area
+
   .navbooked > .navbooked-btn {
     display: $display-three;
     position: $position-two;
