@@ -19,13 +19,13 @@ html {
 .login-grid-one {
   width: 25%;
   float: left;
-  padding: 15px;
+  line-height: 5px;
+  padding: 10px;
 }
 
 .login-grid-two {
   width: 75%;
   float: left;
-  padding: 15px;
 }
 
 .text-login-area-one {
@@ -36,6 +36,36 @@ html {
 .text-login-area-two {
   font-size: 30px;
   font-family: sans-serif;
+}
+
+.input-login-area[type="text"],
+.input-login-area[type="password"] {
+  background-color: #ffffff;
+  width: 40%;
+  padding: 19px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.button-login-area {
+  background-color: blue;
+  color: white;
+  padding: 19px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 10%;
+  font-size: 18px;
+}
+
+.button-login-area:hover {
+  opacity: 0.8;
+}
+
+.container-login-area {
+  padding: 10px;
 }
 
 .banner-area {

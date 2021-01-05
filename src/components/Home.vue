@@ -40,9 +40,11 @@
   </div>
   <div class="login-grid-two">
      <form>
-      <input tpye="text" name="" placeholder="Email">
-      <input type="password" name="" placeholder="Password">
-      <input type="submit" name="" value="Login">
+      <div class="container-login-area">
+      <input class="input-login-area" type="text" name="" placeholder="Email" >
+      <input class="input-login-area" type="password" name="" placeholder="Password">
+      <input class="button-login-area" type="submit" name="" value="Login">
+      </div>
     </form>
   </div>
 </div>
