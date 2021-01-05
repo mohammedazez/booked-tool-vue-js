@@ -1,19 +1,35 @@
+// Color
 $color-one: #f6f8f8;
 $color-two: black;
 $color-three: #e2e3e2;
 $color-four: #ffffff;
+
+// Position
 $position-one: relative;
 $position-two: absolute;
 $seratus-persen: 100%;
+
+// Display
 $display-one: flex;
 $display-two: inline;
 $display-three: inline-block;
 $display-four: none;
 $display-five: block;
+
+// Ukuran
 $ukuran-satu: 50px;
 $ukuran-dua: 100vh;
 $ukuran-tiga: 0px;
+$ukuran-empat: 20px;
+$ukuran-lima: 30px;
+$ukuran-enam: 5px;
+
+// Font
 $font-satu: sans-serif;
+
+// Direction
+$direction-one: row;
+$direction-two: column;
 
 .login-area {
   position: $position-one;
@@ -21,16 +37,16 @@ $font-satu: sans-serif;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: $direction-one;
   width: $seratus-persen;
   height: 200px;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .container-login-area-first {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
+  display: $display-one;
+  flex-direction: $direction-one;
+  max-width: $seratus-persen;
 }
 
 .login-area {
@@ -40,33 +56,33 @@ $font-satu: sans-serif;
 .text-part {
   width: 85%;
   height: auto;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .login-grid-one {
   width: 25%;
   float: left;
-  line-height: 5px;
+  line-height: $ukuran-enam;
   padding: 10px;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .login-grid-two {
   width: 75%;
   float: left;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .text-login-area-one {
-  font-size: 20px;
+  font-size: $ukuran-empat;
   font-family: $font-satu;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .text-login-area-two {
-  font-size: 30px;
+  font-size: $ukuran-lima;
   font-family: $font-satu;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .input-login-area[type="text"],
@@ -75,10 +91,10 @@ $font-satu: sans-serif;
   width: 40%;
   padding: 19px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: $ukuran-enam;
   border: none;
-  font-size: 20px;
-  max-width: 100%;
+  font-size: $ukuran-empat;
+  max-width: $seratus-persen;
 }
 
 .button-login-area {
@@ -87,10 +103,10 @@ $font-satu: sans-serif;
   padding: 19px;
   margin: 8px;
   border: none;
-  border-radius: 5px;
+  border-radius: $ukuran-enam;
   width: 10%;
   font-size: 18px;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 .button-login-area:hover {
@@ -99,55 +115,55 @@ $font-satu: sans-serif;
 
 .container-login-area {
   padding: 10px;
-  max-width: 100%;
+  max-width: $seratus-persen;
 }
 
 @media (max-width: 700px) {
   .login-area {
     height: 400px;
-    max-width: 100%;
+    max-width: $seratus-persen;
   }
 
   .container-login-area-first {
-    flex-direction: column;
+    flex-direction: $direction-two;
   }
 
   .login-grid-one {
-    width: 100%;
+    width: $seratus-persen;
     text-align: center;
     line-height: 0px;
     padding: 0px;
-    max-width: 100%;
+    max-width: $seratus-persen;
   }
 
   .login-grid-two {
-    width: 100%;
-    max-width: 100%;
+    width: $seratus-persen;
+    max-width: $seratus-persen;
   }
 
   .text-login-area-one {
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 100%;
+    font-size: $ukuran-empat;
+    line-height: $ukuran-lima;
+    max-width: $seratus-persen;
   }
 
   .input-login-area[type="text"],
   .input-login-area[type="password"] {
-    width: 100%;
+    width: $seratus-persen;
     padding: 10px;
     margin: 2px;
-    border-radius: 5px;
+    border-radius: $ukuran-enam;
     border: none;
     font-size: 15px;
-    max-width: 100%;
+    max-width: $seratus-persen;
   }
 
   .button-login-area {
     padding: 10px;
     margin: 2px;
-    width: 100%;
+    width: $seratus-persen;
     font-size: 18px;
-    max-width: 100%;
+    max-width: $seratus-persen;
   }
 
   .button-login-area:hover {
@@ -156,6 +172,64 @@ $font-satu: sans-serif;
 
   .container-login-area {
     padding: 0px;
-    max-width: 100%;
+    max-width: $seratus-persen;
+  }
+}
+
+@media (max-width: 1125px) {
+  .login-area {
+    height: 400px;
+    max-width: $seratus-persen;
+  }
+
+  .container-login-area-first {
+    flex-direction: $direction-two;
+  }
+
+  .login-grid-one {
+    width: $seratus-persen;
+    text-align: center;
+    line-height: 0px;
+    padding: 0px;
+    max-width: $seratus-persen;
+  }
+
+  .login-grid-two {
+    width: $seratus-persen;
+    max-width: $seratus-persen;
+  }
+
+  .text-login-area-one {
+    font-size: $ukuran-empat;
+    line-height: $ukuran-lima;
+    max-width: $seratus-persen;
+  }
+
+  .input-login-area[type="text"],
+  .input-login-area[type="password"] {
+    width: $seratus-persen;
+    padding: 10px;
+    margin: 2px;
+    border-radius: $ukuran-enam;
+    border: none;
+    font-size: 15px;
+    max-width: $seratus-persen;
+  }
+
+  .button-login-area {
+    padding: 10px;
+    margin: 2px;
+    width: $seratus-persen;
+    font-size: 18px;
+    max-width: $seratus-persen;
+  }
+
+  .button-login-area:hover {
+    opacity: 0.8;
+  }
+
+  .container-login-area {
+    padding: 0px;
+    max-width: $seratus-persen;
   }
 }

@@ -1,25 +1,80 @@
-$color-one: #f6f8f8;
-$color-two: black;
-$color-three: #e2e3e2;
-$color-four: #ffffff;
-$position-one: relative;
-$position-two: absolute;
-$seratus-persen: 100%;
-$display-one: flex;
-$display-two: inline;
-$display-three: inline-block;
-$display-four: none;
-$display-five: block;
-$ukuran-satu: 50px;
-$ukuran-dua: 100vh;
-$ukuran-tiga: 0px;
-$font-satu: sans-serif;
+.gambar-area-one {
+  position: absolute;
+  max-width: 100%;
+  width: 55%;
+  height: 100%;
+}
 
-.banner-area {
-  position: $position-one;
-  background-image: url(https://i.postimg.cc/GtRM7mdX/1.jpg);
-  width: $seratus-persen;
-  height: $ukuran-dua;
-  background-repeat: no-repeat;
-  background-size: cover;
+.gambar-area-two {
+  position: absolute;
+  max-width: 100%;
+  width: 50%;
+  height: 90%;
+  margin-left: 670px;
+}
+
+.row-jumbotron {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.column-jumbotron {
+  float: left;
+  width: 100%;
+  height: 600px;
+}
+
+@media (max-width: 700px) {
+  .gambar-area-one {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+  }
+
+  .gambar-area-two {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+
+  .row-jumbotron {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .column-jumbotron {
+    float: left;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .gambar-area-one {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+  }
+
+  .gambar-area-two {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+
+  .row-jumbotron {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .column-jumbotron {
+    float: left;
+    width: 100%;
+    height: 600px;
+  }
 }

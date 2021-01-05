@@ -151,4 +151,57 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 1125px) {
+  .login-area {
+    height: 400px;
+    max-width: 100%;
+  }
+  .container-login-area-first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-grid-one {
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    padding: 0px;
+    max-width: 100%;
+  }
+  .login-grid-two {
+    width: 100%;
+    max-width: 100%;
+  }
+  .text-login-area-one {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+  .input-login-area[type="text"],
+  .input-login-area[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    max-width: 100%;
+  }
+  .button-login-area {
+    padding: 10px;
+    margin: 2px;
+    width: 100%;
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .button-login-area:hover {
+    opacity: 0.8;
+  }
+  .container-login-area {
+    padding: 0px;
+    max-width: 100%;
+  }
+}
 /*# sourceMappingURL=Loginsection.css.map */
