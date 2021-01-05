@@ -3,10 +3,13 @@ $color-one: #f6f8f8;
 $color-two: black;
 $color-three: #e2e3e2;
 $color-four: #ffffff;
+$color-five: #428ecb;
 
 // Position
 $position-one: relative;
 $position-two: absolute;
+$left: left;
+$center: center;
 $seratus-persen: 100%;
 
 // Display
@@ -15,14 +18,6 @@ $display-two: inline;
 $display-three: inline-block;
 $display-four: none;
 $display-five: block;
-
-// Ukuran
-$ukuran-satu: 50px;
-$ukuran-dua: 100vh;
-$ukuran-tiga: 0px;
-$ukuran-empat: 20px;
-$ukuran-lima: 30px;
-$ukuran-enam: 5px;
 
 // Font
 $font-satu: sans-serif;
@@ -35,7 +30,7 @@ $direction-two: column;
   position: $position-one;
   display: $display-one;
   justify-content: space-around;
-  align-items: center;
+  align-items: $center;
   flex-wrap: wrap;
   flex-direction: $direction-one;
   width: $seratus-persen;
@@ -61,7 +56,7 @@ $direction-two: column;
 
 .login-grid-one {
   width: 25%;
-  float: left;
+  float: $left;
   line-height: 35px;
   padding: 10px;
   max-width: $seratus-persen;
@@ -69,18 +64,18 @@ $direction-two: column;
 
 .login-grid-two {
   width: 75%;
-  float: left;
+  float: $left;
   max-width: $seratus-persen;
 }
 
 .text-login-area-one {
-  font-size: $ukuran-empat;
+  font-size: 20px;
   font-family: $font-satu;
   max-width: $seratus-persen;
 }
 
 .text-login-area-two {
-  font-size: $ukuran-lima;
+  font-size: 30px;
   font-family: $font-satu;
   max-width: $seratus-persen;
 }
@@ -91,19 +86,19 @@ $direction-two: column;
   width: 40%;
   padding: 19px;
   margin: 10px;
-  border-radius: $ukuran-enam;
-  border: none;
-  font-size: $ukuran-empat;
+  border-radius: 5px;
+  border: $display-four;
+  font-size: 20px;
   max-width: $seratus-persen;
 }
 
 .button-login-area {
-  background-color: #428ecb;
-  color: white;
+  background-color: $color-five;
+  color: $color-four;
   padding: 19px;
   margin: 8px;
-  border: none;
-  border-radius: $ukuran-enam;
+  border: $display-four;
+  border-radius: 5px;
   width: 10%;
   font-size: 18px;
   max-width: $seratus-persen;
@@ -130,7 +125,7 @@ $direction-two: column;
 
   .login-grid-one {
     width: $seratus-persen;
-    text-align: center;
+    text-align: $center;
     line-height: 0px;
     padding: 0px;
     max-width: $seratus-persen;
@@ -142,8 +137,8 @@ $direction-two: column;
   }
 
   .text-login-area-one {
-    font-size: $ukuran-empat;
-    line-height: $ukuran-lima;
+    font-size: 20px;
+    line-height: 30px;
     max-width: $seratus-persen;
   }
 
@@ -152,8 +147,8 @@ $direction-two: column;
     width: $seratus-persen;
     padding: 10px;
     margin: 2px;
-    border-radius: $ukuran-enam;
-    border: none;
+    border-radius: 5px;
+    border: $display-four;
     font-size: 15px;
     max-width: $seratus-persen;
   }
@@ -188,7 +183,7 @@ $direction-two: column;
 
   .login-grid-one {
     width: $seratus-persen;
-    text-align: center;
+    text-align: $center;
     line-height: 30px;
     padding: 20px;
     max-width: $seratus-persen;
@@ -200,8 +195,8 @@ $direction-two: column;
   }
 
   .text-login-area-one {
-    font-size: $ukuran-empat;
-    line-height: $ukuran-lima;
+    font-size: 20px;
+    line-height: 30px;
     max-width: $seratus-persen;
   }
 
@@ -210,8 +205,8 @@ $direction-two: column;
     width: $seratus-persen;
     padding: 10px;
     margin: 2px;
-    border-radius: $ukuran-enam;
-    border: none;
+    border-radius: 5px;
+    border: $display-four;
     font-size: 15px;
     max-width: $seratus-persen;
   }
