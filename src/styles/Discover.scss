@@ -58,10 +58,11 @@ $direction-two: column;
 .img-discover-two {
   width: auto;
   height: 500px;
-  position: absolute;
+  position: $position-two;
   top: 155%;
   left: 23%;
   border-radius: 20px;
+  max-width: 100%;
 }
 
 .container-tab {
@@ -138,21 +139,40 @@ $direction-two: column;
   }
 
   .discover-area {
-    height: 700px;
+    height: 800px;
   }
 
   .img-discover-two {
     width: auto;
     height: 200px;
-    position: absolute;
-    top: 185%;
-    left: 10%;
+    position: $position-one;
+    left: 0%;
     border-radius: 20px;
     max-width: 100%;
   }
 
   .container-tab {
     text-align: $center;
-    padding-top: 200px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .discover-area {
+    height: 800px;
+  }
+
+  .img-discover-two {
+    width: auto;
+    height: 300px;
+    position: $position-one;
+    left: 0%;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .container-tab {
+    text-align: $center;
+    padding-top: 0px;
   }
 }

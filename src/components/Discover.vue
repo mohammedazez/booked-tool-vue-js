@@ -28,7 +28,7 @@
         </p>
       </Tab>
       <Tab name="Discover C">
-          <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849426/Ice%20Message%20Indonesia/pexels-kevin-ku-577585_vgioja.jpg"/>
+          <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849445/Ice%20Message%20Indonesia/pexels-vito-gori%C4%8Dan-6253568_squkey.jpg"/>
         <p class="text-tab">
           | Makan semangka, makan kedondong. kalau suka, nyatain dong.
           | Ga punya pendirian, bikin jemu. ga mau sendirian, maunya bobo sama kamu.
