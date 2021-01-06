@@ -60,5 +60,69 @@ $direction-two: column;
   height: 50px;
 }
 
+.container-tab {
+  text-align: $center;
+}
+
+.text-tab {
+  font-size: 17px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+// Tabs
+.tabs {
+  border-bottom: 2px solid #000000;
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.tabs-details {
+  padding: 20px;
+}
+.tabs-ul {
+  // width: 100%;
+  align-items: $center;
+  justify-content: $center;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: $font-satu;
+  display: $display-one;
+  padding: 5px;
+  list-style: none;
+  li {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .nav-item {
+    cursor: pointer;
+    &:hover {
+      color: #fb130a;
+    }
+    &.is-active {
+      color: #fb130a;
+    }
+  }
+}
+
 @media (max-width: 700px) {
+  .text-tab {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tabs {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .tabs-ul {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+    li {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
 }
