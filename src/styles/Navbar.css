@@ -1,5 +1,17 @@
+.logo {
+  max-width: 100%;
+  width: auto;
+  height: 20px;
+}
+
 .navbooked {
-  height: 50px;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 100%;
   background-color: #f6f8f8;
   position: relative;
@@ -13,17 +25,22 @@
   display: inline-block;
   font-size: 22px;
   color: black;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .navbooked > .navbooked-btn {
   display: none;
 }
 
+.nav-teks {
+  margin-left: 50px;
+}
+
 .navbooked > .navbooked-links {
   display: inline;
   float: right;
   font-size: 18px;
+  font-family: sans-serif;
 }
 
 .navbooked > .navbooked-links > a {
@@ -34,7 +51,8 @@
 }
 
 .navbooked > .navbooked-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e2e3e2;
+  border-radius: 30px;
 }
 
 .navbooked > #navbooked-check {
@@ -84,7 +102,7 @@
     height: 0px;
   }
   .navbooked > #navbooked-check:checked ~ .navbooked-links {
-    height: calc($ukuran-dua - $ukuran-satu);
+    height: calc(100vh - 50px);
     overflow-y: auto;
   }
 }

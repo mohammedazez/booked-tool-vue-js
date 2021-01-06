@@ -1,19 +1,30 @@
+// Color
 $color-one: #f6f8f8;
 $color-two: black;
 $color-three: #e2e3e2;
 $color-four: #ffffff;
+$color-five: #428ecb;
+
+// Position
 $position-one: relative;
 $position-two: absolute;
+$left: left;
+$center: center;
 $seratus-persen: 100%;
+
+// Display
 $display-one: flex;
 $display-two: inline;
 $display-three: inline-block;
 $display-four: none;
 $display-five: block;
-$ukuran-satu: 50px;
-$ukuran-dua: 100vh;
-$ukuran-tiga: 0px;
+
+// Font
 $font-satu: sans-serif;
+
+// Direction
+$direction-one: row;
+$direction-two: column;
 
 .discover-area {
   position: $position-one;
@@ -23,12 +34,29 @@ $font-satu: sans-serif;
   flex-wrap: wrap;
   flex-direction: row;
   width: $seratus-persen;
-  height: 700px;
+  height: 200px;
 }
 
 .discover-area {
   background-color: $color-four;
   color: $color-two;
+}
+
+.discover-part {
+  text-align: $center;
+}
+
+.title-discover-one {
+  font-family: $font-satu;
+}
+
+.title-discover-two {
+  font-family: $font-satu;
+}
+
+.img-discover {
+  width: auto;
+  height: 50px;
 }
 
 @media (max-width: 700px) {

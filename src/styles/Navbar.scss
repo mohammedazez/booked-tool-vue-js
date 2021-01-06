@@ -1,26 +1,73 @@
+// Color
 $color-one: #f6f8f8;
 $color-two: black;
 $color-three: #e2e3e2;
 $color-four: #ffffff;
+$color-five: #428ecb;
+
+// Position
 $position-one: relative;
 $position-two: absolute;
 $position-three: fixed;
+$left: left;
+$center: center;
 $seratus-persen: 100%;
+
+// Display
 $display-one: flex;
 $display-two: inline;
 $display-three: inline-block;
 $display-four: none;
 $display-five: block;
-$ukuran-satu: 50px;
-$ukuran-dua: 100vh;
-$ukuran-tiga: 0px;
+
+// Font
 $font-satu: sans-serif;
 
+// Direction
+$direction-one: row;
+$direction-two: column;
+
+.logo {
+  max-width: $seratus-persen;
+  width: 40px;
+  height: 20px;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.navbar-toggle {
+  z-index: 3;
+}
+
+.search-navbar {
+  max-width: $seratus-persen;
+  width: 19px;
+  height: auto;
+}
+
 .navbooked {
-  height: $ukuran-satu;
-  width: $seratus-persen;
+  // height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  // width: $seratus-persen;
   background-color: $color-one;
-  position: $position-one;
+  font-family: $font-satu;
+  font-size: 17px;
+  // position: $position-one;
+}
+
+.navbooked-teks {
+  font-size: 17px;
+  font-family: $font-satu;
 }
 
 .navbooked > .navbooked-header {
@@ -31,17 +78,22 @@ $font-satu: sans-serif;
   display: $display-three;
   font-size: 22px;
   color: $color-two;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .navbooked > .navbooked-btn {
   display: $display-four;
 }
 
+.nav-teks {
+  margin-left: 50px;
+}
+
 .navbooked > .navbooked-links {
   display: $display-two;
   float: right;
   font-size: 18px;
+  font-family: $font-satu;
 }
 
 .navbooked > .navbooked-links > a {
@@ -52,7 +104,8 @@ $font-satu: sans-serif;
 }
 
 .navbooked > .navbooked-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-three;
+  border-radius: 30px;
 }
 
 .navbooked > #navbooked-check {
@@ -60,16 +113,32 @@ $font-satu: sans-serif;
 }
 
 @media (max-width: 700px) {
+  .logo {
+    max-width: $seratus-persen;
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbooked {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .navbooked > .navbooked-btn {
     display: $display-three;
     position: $position-two;
-    right: $ukuran-tiga;
-    top: $ukuran-tiga;
+    right: 0px;
+    top: 0px;
   }
   .navbooked > .navbooked-btn > label {
     display: $display-three;
-    width: $ukuran-satu;
-    height: $ukuran-satu;
+    width: 50px;
+    height: 50px;
     padding: 13px;
   }
   .navbooked > .navbooked-btn > label:hover,
@@ -87,21 +156,21 @@ $font-satu: sans-serif;
     display: $display-five;
     width: $seratus-persen;
     background-color: $color-one;
-    height: $ukuran-tiga;
+    height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: $ukuran-satu;
-    left: $ukuran-tiga;
+    top: 50px;
+    left: 0px;
   }
   .navbooked > .navbooked-links > a {
     display: $display-five;
     width: $seratus-persen;
   }
   .navbooked > #navbooked-check:not(:checked) ~ .navbooked-links {
-    height: $ukuran-tiga;
+    height: 0px;
   }
   .navbooked > #navbooked-check:checked ~ .navbooked-links {
-    height: calc($ukuran-dua - $ukuran-satu);
+    height: calc(100vh - 50px);
     overflow-y: auto;
   }
 }
