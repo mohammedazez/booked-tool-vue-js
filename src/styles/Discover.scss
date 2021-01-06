@@ -27,14 +27,14 @@ $direction-one: row;
 $direction-two: column;
 
 .discover-area {
-  position: $position-one;
-  display: $display-one;
-  justify-content: space-around;
+  // position: $position-one;
+  // display: $display-one;
+  // justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   width: $seratus-persen;
-  height: 200px;
+  height: 700px;
 }
 
 .discover-area {
@@ -43,6 +43,7 @@ $direction-two: column;
 }
 
 .discover-part {
+  padding-top: 50px;
   text-align: $center;
 }
 
