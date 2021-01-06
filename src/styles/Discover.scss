@@ -34,7 +34,7 @@ $direction-two: column;
   flex-wrap: wrap;
   flex-direction: row;
   width: $seratus-persen;
-  height: 700px;
+  height: 1000px;
 }
 
 .discover-area {
@@ -55,19 +55,30 @@ $direction-two: column;
   font-family: $font-satu;
 }
 
-.img-discover {
+.img-discover-two {
   width: auto;
-  height: 50px;
+  height: 500px;
+  position: absolute;
+  top: 155%;
+  left: 23%;
+  border-radius: 20px;
 }
 
 .container-tab {
   text-align: $center;
+  padding-top: 500px;
 }
 
 .text-tab {
   font-size: 17px;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.img-discover {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
 }
 
 // Tabs
@@ -124,5 +135,24 @@ $direction-two: column;
       margin-right: 5px;
       margin-left: 5px;
     }
+  }
+
+  .discover-area {
+    height: 700px;
+  }
+
+  .img-discover-two {
+    width: auto;
+    height: 200px;
+    position: absolute;
+    top: 185%;
+    left: 10%;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .container-tab {
+    text-align: $center;
+    padding-top: 200px;
   }
 }

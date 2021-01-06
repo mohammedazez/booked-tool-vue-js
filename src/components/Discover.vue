@@ -9,6 +9,7 @@
   <div class="container-tab">
     <Tabs>
       <Tab name="Discover A" selected="true">
+    <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849445/Ice%20Message%20Indonesia/pexels-vito-gori%C4%8Dan-6253568_squkey.jpg"/>
         <p class="text-tab">
           | Ciuman di pipi, ciuman di dahi, Apa yang dicium sesudah lah cinta?
           | Dua tiga kacang tanah, enggak ada pacar yang datang ke rumah.
@@ -18,6 +19,7 @@
         </p>
       </Tab>
       <Tab name="Discover B">
+          <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849431/Ice%20Message%20Indonesia/pexels-cottonbro-5076534_qegrzw.jpg"/>
         <p class="text-tab">
          | Mata belo, ala komedian.gue sama elo? maunya jadian.
          | Tunda lapar, makan indomi. hati menggelepar, cintapun bersemi.
@@ -26,6 +28,7 @@
         </p>
       </Tab>
       <Tab name="Discover C">
+          <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849426/Ice%20Message%20Indonesia/pexels-kevin-ku-577585_vgioja.jpg"/>
         <p class="text-tab">
           | Makan semangka, makan kedondong. kalau suka, nyatain dong.
           | Ga punya pendirian, bikin jemu. ga mau sendirian, maunya bobo sama kamu.
@@ -34,6 +37,7 @@
         </p>
       </Tab>
       <Tab name="Discover D">
+          <img class="img-discover-two" src="https://res.cloudinary.com/dulqd0xea/image/upload/v1609849428/Ice%20Message%20Indonesia/pexels-cottonbro-5076530_q9lisn.jpg"/>
         <p class="text-tab">
           | Buah semangka buah duren nggak nyangka gue keren
           | Jambu merah di dinding jangan marah just kidding
